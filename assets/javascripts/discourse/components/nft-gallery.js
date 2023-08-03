@@ -1,11 +1,16 @@
 import Component from "@ember/component";
 import { action } from "@ember/object";
 import I18n from "I18n";
+import { helperContext } from "discourse-common/lib/helpers";
 
 // needed until we add @glimmer/tracking
 const tracked = Ember._tracked;
 
 const OPENSEA_API = "https://api.opensea.io/api/v1";
+const headers = {
+  'X-API-KEY': helperContext().siteSettings.opensea_x_api_key,
+};
+
 export const ASSETS_LIMIT = 20;
 export const COLLECTIONS_LIMIT = 300;
 
@@ -56,7 +61,10 @@ export default class extends Component {
         collection: this.query,
       };
       const response = await fetch(
-        `${OPENSEA_API}/assets?${strQueryParams(queryParams)}`
+        `${OPENSEA_API}/assets?${strQueryParams(queryParams)}`,
+        {
+          headers
+        }
       );
       const assets = (await response.json()).assets;
       this.noMore = assets.length < ASSETS_LIMIT ? true : false;
@@ -75,7 +83,10 @@ export default class extends Component {
         limit: COLLECTIONS_LIMIT,
       };
       const response = await fetch(
-        `${OPENSEA_API}/collections?${strQueryParams(queryParams)}`
+        `${OPENSEA_API}/collections?${strQueryParams(queryParams)}`,
+        {
+          headers
+        }
       );
       const json = await response.json();
       const collections = json.collections
