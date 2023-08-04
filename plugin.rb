@@ -16,6 +16,8 @@ register_asset 'stylesheets/common.scss'
 register_asset 'stylesheets/desktop.scss', :desktop
 register_asset 'stylesheets/mobile.scss', :mobile
 
+register_svg_icon "fab-ethereum" if respond_to?(:register_svg_icon)
+
 DiscoursePluginRegistry.serialized_current_user_fields << "nft_verified"
 DiscoursePluginRegistry.serialized_current_user_fields << "nft_wallet_address"
 DiscoursePluginRegistry.serialized_current_user_fields << "nft_token_id"
