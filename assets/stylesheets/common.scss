@@ -18,7 +18,11 @@
   & input[type="image"] {
     &:hover {
       background-color: $tertiary-low;
-      clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+      border-radius: 0;
+      -webkit-mask: url('/plugins/discourse-nft-avatar/images/hexagon-twitter.png');
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      overflow: hidden;
     }
   }
 
@@ -26,7 +30,10 @@
     width: 90px;
     height: 90px;
     border-radius: 0;
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    -webkit-mask: url('/plugins/discourse-nft-avatar/images/hexagon-twitter.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    overflow: hidden;
     &:before {
       height: 90px;
     }
@@ -52,9 +59,13 @@ img.avatar.nft,
 .nft img.avatar,
 input[type="image"].avatar.nft,
 .nft input[type="image"].avatar {
-  border-radius: 0;
   background-color: $tertiary-low;
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  border-radius: 0;
+  -webkit-mask: url('/plugins/discourse-nft-avatar/images/hexagon-twitter.png');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  border: 0;
+  overflow: hidden;
 }
 
 .modal .modal-body .success {
