@@ -8,11 +8,11 @@ import {
 import { test } from "qunit";
 import { click, fillIn, visit } from "@ember/test-helpers";
 
-import assets from "discourse/plugins/discourse-nft-avatar/fixtures/assets";
-import assetsCollection from "discourse/plugins/discourse-nft-avatar/fixtures/assets_collection";
-import collections from "discourse/plugins/discourse-nft-avatar/fixtures/collections";
+import assets from "discourse/plugins/nft-pfp/fixtures/assets";
+import assetsCollection from "discourse/plugins/nft-pfp/fixtures/assets_collection";
+import collections from "discourse/plugins/nft-pfp/fixtures/collections";
 
-import { ASSETS_LIMIT } from "discourse/plugins/discourse-nft-avatar/discourse/components/nft-gallery";
+import { ASSETS_LIMIT } from "discourse/plugins/nft-pfp/discourse/components/nft-gallery";
 
 const OWNER_OF_NONE = "0x3b8fff947d5dd0c0f0ef7aaa611ecf92e0885f96";
 const OWNER_OF_MANY = "0x63c9fb006e4474699cc6ccd09167ce5d2a875c9d";

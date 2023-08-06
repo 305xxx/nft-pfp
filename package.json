@@ -1,7 +1,7 @@
 {
-  "name": "discourse-nft-avatar",
+  "name": "nft-pfp",
   "version": "0.0.1",
-  "repository": "https://github.com/melhosseiny/discourse-nft-avatar",
+  "repository": "https://github.com/305xxx/nft-pfp",
   "author": "Mostafa Elshamy",
   "license": "MIT",
   "devDependencies": {

@@ -1,5 +1,5 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
-import { owner_of } from "discourse/plugins/discourse-nft-avatar/lib/erc721";
+import { owner_of } from "discourse/plugins/nft-pfp/lib/erc721";
 
 // eslint-disable-next-line
 const web3 = new Web3(Web3.givenProvider);

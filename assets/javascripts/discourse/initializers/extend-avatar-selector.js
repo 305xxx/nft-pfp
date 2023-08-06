@@ -7,7 +7,7 @@ export default {
   initialize() {
     withPluginApi("1.0.0", (api) => {
       api.modifyClass("controller:avatar-selector", {
-        pluginId: "discourse-nft-avatar",
+        pluginId: "nft-pfp",
         uploader: "",
         connecting: false,
         actions: {

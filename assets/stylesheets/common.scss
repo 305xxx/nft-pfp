@@ -19,7 +19,7 @@
     &:hover {
       background-color: $tertiary-low;
       border-radius: 0;
-      -webkit-mask: url('/plugins/discourse-nft-avatar/images/hexagon-twitter.png');
+      -webkit-mask: url('/plugins/nft-pfp/images/hexagon-twitter.png');
       -webkit-mask-size: contain;
       -webkit-mask-repeat: no-repeat;
       overflow: hidden;
@@ -30,7 +30,7 @@
     width: 90px;
     height: 90px;
     border-radius: 0;
-    -webkit-mask: url('/plugins/discourse-nft-avatar/images/hexagon-twitter.png');
+    -webkit-mask: url('/plugins/nft-pfp/images/hexagon-twitter.png');
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     overflow: hidden;
@@ -61,7 +61,7 @@ input[type="image"].avatar.nft,
 .nft input[type="image"].avatar {
   background-color: $tertiary-low;
   border-radius: 0;
-  -webkit-mask: url('/plugins/discourse-nft-avatar/images/hexagon-twitter.png');
+  -webkit-mask: url('/plugins/nft-pfp/images/hexagon-twitter.png');
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   border: 0;

@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# name: discourse-nft-avatar
+# name: nft-pfp
 # about: Set a verified NFT avatar
 # version: 0.0.1
 # authors: Mostafa Elshamy
-# url: https://github.com/melhosseiny/discourse-nft-avatar
+# url: https://github.com/305xxx/nft-pfp
 # required_version: 2.7.0
 # transpile_js: true
 
